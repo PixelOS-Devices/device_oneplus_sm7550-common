@@ -38,6 +38,7 @@ void vendor_load_properties() {
 
     switch (hw_region_id) {
         case 2: // benz
+            OverrideProperty("ro.product.device", "OP5D3FL1");
             OverrideProperty("ro.product.product.model", "CPH2613");
         default:
             LOG(ERROR) << "Unexpected region ID: " << hw_region_id;

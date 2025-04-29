@@ -182,6 +182,8 @@ PRODUCT_PACKAGES += \
     ueventd.oplus.rc \
     ueventd.qcom.rc
 
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_oplus)
+
 # Keymint
 PRODUCT_PACKAGES += \
     android.hardware.hardware_keystore.xml
